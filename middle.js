@@ -8,20 +8,24 @@ const eqArrays = function(left, right) {
     else return false;
   } else return false;
 };
-  
+    
 const assertArraysEqual = function(left, right) {
   if (eqArrays(left, right) === true) console.log(`🔵🔵🔵 Assertion Passed: [${left}] === [${right}]`);
   else console.log(`🔴🔴🔴 Assertion Failed: [${left}] !== [${right}]`);
 };
   
-const words = ["hello", "world", "lighthouse"];
-const without = function(source, itemsToremove) {
-  let remain = [];
-  for (let i = 0; i < source.length; i++) {
-    if (!itemsToremove.includes(source[i]))
-      remain.push(source[i]);
+const middle = function(input) {
+  let middleNumber = [];
+  if (input.length <= 1) return middleNumber;
+  if (input.length % 2 === 1) {
+    middleNumber.push(input[Math.round(input.length / 2) - 1]);
   }
-  return remain;
+  if (input.length % 2 === 0) {
+    middleNumber.push(input[(input.length / 2) - 1]);
+    middleNumber.push(input[input.length / 2]);
+  }
+  return middleNumber;
 };
-
-assertArraysEqual(without(words, ["lighthouse"]), ["hello", "world", "lighthouse"]);
+  
+console.log(assertArraysEqual(middle([1, 2, 3]), [2]));
+console.log(assertArraysEqual(middle([1, 2, 3]), [5]));
