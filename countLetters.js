@@ -6,15 +6,15 @@ const assertEqual = function(actual, expected) {
 
 const countLetters = function(sentence) {
   const summaryLetter = {};
-  for (let letter of sentence) {
-    if (letter !== " ") {
-      if (summaryLetter[letter]) {
-        summaryLetter[letter] += 1;
-      } else {
-        summaryLetter[letter] = 1;
+  for (let i = 0; i < sentence.length; i++) {
+    if (sentence[i] != " ") {
+        if (summaryLetter[sentence[i]]) {
+          summaryLetter[sentence[i]] += 1;
+        } else {
+          summaryLetter[sentence[i]] = 1;
       }
     }
   }
   return summaryLetter;
 };
-console.log(countLetters("lighthouse in the house"));
+// console.log(countLetters("lighthouse in the house"));

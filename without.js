@@ -24,4 +24,4 @@ const without = function(source, itemsToremove) {
   return remain;
 };
 
-assertArraysEqual(without(words, ["lighthouse"]), ["hello", "world", "lighthouse"]);
+// assertArraysEqual(without(words, ["lighthouse"]), ["hello", "world", "lighthouse"]);
