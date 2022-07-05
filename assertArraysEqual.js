@@ -14,4 +14,5 @@ const assertArraysEqual = function(left, right) {
   else console.log(`🔴🔴🔴 Assertion Failed: [${left}] !== [${right}]`);
 };
 
+module.exports = assertArraysEqual;
 

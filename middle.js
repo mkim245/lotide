@@ -16,7 +16,7 @@ const assertArraysEqual = function(left, right) {
   
 const middle = function(input) {
   let middleNumber = [];
-  if (input.length <= 1) return middleNumber;
+  if (input.length <= 2) return middleNumber;
   if (input.length % 2 === 1) {
     middleNumber.push(input[Math.round(input.length / 2) - 1]);
   }
@@ -26,6 +26,11 @@ const middle = function(input) {
   }
   return middleNumber;
 };
-  
-console.log(assertArraysEqual(middle([1, 2, 3]), [2]));
-console.log(assertArraysEqual(middle([1, 2, 3]), [5]));
+ 
+middle([7, 3]);
+
+
+// console.log(assertArraysEqual(middle([1, 2, 3]), [2]));
+// console.log(assertArraysEqual(middle([1, 2, 3]), [5]));
+
+module.exports = middle;

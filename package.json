@@ -1,0 +1,22 @@
+{
+  "name": "@mkim245/lotide",
+  "version": "1.0.0",
+  "description": "A clone of the lodash JavaScript library to create various functions",
+  "main": "assertArraysEqual.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mkim245/lotide.git"
+  },
+  "author": "Mingu Kim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mkim245/lotide/issues"
+  },
+  "homepage": "https://github.com/mkim245/lotide#readme"
+}
